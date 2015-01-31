@@ -5,7 +5,7 @@
  *
  * @author JoseRobinson.com
  * @link GitHup: https://github.com/jrobinsonc/Video_Embed
- * @version 1.4.0
+ * @version 1.4.1
  */
 class Video_Embed
 {
@@ -82,7 +82,7 @@ class Video_Embed
         if (! in_array($thumb_type, $thumbs_types_list))
             $thumb_type = $thumbs_types_list[0];
 
-        return sprintf('http://img.youtube.com/vi/%s/%s.jpg', $video_id, $image);
+        return sprintf('http://img.youtube.com/vi/%s/%s.jpg', $video_id, $thumb_type);
     }
 
     public function get_youtube_video_data($video_id)
